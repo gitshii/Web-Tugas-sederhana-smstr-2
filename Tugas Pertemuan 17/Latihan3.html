@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Penjualan Barang</title>
+</head>
+
+<body>
+
+    <script language="javascript" type="text/javascript">
+        var myName = prompt("Please enter your name", "Budi");
+        var namaBarang = prompt("Please enter the product name", "");
+        var hargaSatuan = prompt("Please enter the unit price", "");
+        var jumlahBarang = prompt("Please enter the quantity", "");
+
+        var hb = hargaSatuan * jumlahBarang; // Harga barang
+        var disc = 0; // Inisialisasi diskon
+
+        if (hb > 500000) {
+            disc = 0.05 * hb; // Diskon 5%
+        } else if (hb > 300000) {
+            disc = 0.02 * hb; // Diskon 2%
+        } else {
+            disc = 0.005 * hb; // Diskon 0.5%
+        }
+
+        var hbb = hb - disc; // Harga setelah diskon
+
+        document.write("<font size='7' color='blue'><img src='shoping.png' width='64' height='64' alt='Keranjang Belanja'>Penjualan Harga Barang</font>", "<br>");
+        document.write("<font size=4 color='sienna'><pre>");
+        document.write("==============================================================", "<br>");
+        document.write("<pre>Nama barang         : " + namaBarang + "</pre>");
+        document.write("<pre>Harga satuan        : " + hargaSatuan + "</pre>");
+        document.write("<pre>Jumlah barang       : " + jumlahBarang + "</pre>");
+        document.write("<pre>Harga Barang        : " + hb + "</pre>");
+        document.write("<pre>Harga Diskon        : " + disc + "</pre>");
+        document.write("<pre>Harga Barang Bersih : " + hbb + "</pre>");
+        document.write("</font></pre>");
+        document.write("==============================================================", "<br>");
+        document.write("<font size='3' color='red'><b>");
+        document.write("Created by " + myName);
+        document.write("</b></font>");
+    </script>
+
+</body>
+
+</html>

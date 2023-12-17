@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Script</title>
+    <script type="text/javascript">
+        var d = new Date();
+        var time = d.getHours();
+
+        if (time < 24) {
+            document.write("Good morning!");
+        } else {
+            document.write("Good day!");
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Elemen HTML untuk menampilkan pesan -->
+    <p id="greeting"></p>
+
+</body>
+
+</html>

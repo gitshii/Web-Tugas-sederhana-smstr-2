@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deret Bilangan Genap Habis Dibagi 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Deret Bilangan Genap Habis Dibagi 3</h2>
+
+<script>
+    // Meminta pengguna memasukkan nilai awal dan akhir deret
+    var nilaiAwal = prompt("Masukkan nilai awal deret:");
+    var nilaiAkhir = prompt("Masukkan nilai akhir deret:");
+
+    // Mengonversi input menjadi bilangan bulat
+    nilaiAwal = parseInt(nilaiAwal);
+    nilaiAkhir = parseInt(nilaiAkhir);
+
+    // Memastikan nilaiAwal lebih kecil daripada nilaiAkhir
+    if (nilaiAwal > nilaiAkhir) {
+        alert("Nilai awal harus lebih kecil daripada nilai akhir.");
+    } else {
+        // Inisialisasi variabel untuk menyimpan deret dan jumlah
+        var deret = '';
+        var banyakDeret = 0;
+        var jumlahDeret = 0;
+
+        // Loop untuk mencari dan menghitung deret
+        for (var i = nilaiAwal; i <= nilaiAkhir; i++) {
+            if (i % 2 === 0 && i % 3 === 0) {
+                deret += i + ' ';
+                banyakDeret++;
+                jumlahDeret += i;
+            }
+        }
+
+        // Menampilkan hasilnya
+        document.write("<p>Nilai Awal: " + nilaiAwal + "</p>");
+        document.write("<p>Nilai Akhir: " + nilaiAkhir + "</p>");
+        document.write("<p>Deret yang tampil: " + deret + "</p>");
+        document.write("<p>Jumlah deret bilangan: " + banyakDeret + " bilangan</p>");
+        document.write("<p>Jumlah nilai bilangan tersebut: " + jumlahDeret + "</p>");
+    }
+</script>
+
+</body>
+</html>

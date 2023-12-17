@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pilihan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        #menu {
+            display: inline-block;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Menu Pilihan</h2>
+
+    <div id="menu">
+        <p>[1] Menghitung Kalkulator</p>
+        <p>[2] Menghitung Luas Trapesium</p>
+        <p>[3] Menghitung Deret</p>
+
+        <label for="pilihan">Pilihan Anda:</label>
+        <input type="text" id="pilihan">
+        <button onclick="pilihMenu()">Pilih</button>
+
+        <div id="hasil"></div>
+    </div>
+
+    <script>
+        function pilihMenu() {
+            var pilihan = document.getElementById('pilihan').value;
+
+            switch (pilihan) {
+                case '1':
+                    window.location.href = "https://viddokta.github.io/WebsiteHyperlink/Tugas%20Pertemuan%2016/kalkulator/index.html";
+                    break;
+                case '2':
+                    window.location.href = "https://viddokta.github.io/WebsiteHyperlink/Tugas%20Pertemuan%2014/luastrapesium.html";
+                    break;
+                case '3':
+                    window.location.href = "https://viddokta.github.io/WebsiteHyperlink/Tugas%20Pertemuan%2017/tgs17.html";
+                    break;
+                default:
+                    alert("Pilihan tidak valid. Silakan pilih [1], [2], atau [3].");
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
