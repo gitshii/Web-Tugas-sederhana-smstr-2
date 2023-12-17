@@ -57,6 +57,33 @@ a {
     margin: 0 auto;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggle-label {
+    cursor: pointer;
+  }
+
+  #navbar-toggle:checked + .navbar-menu {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 1200px) {
     .main-contrainer {
         width: 90%;
