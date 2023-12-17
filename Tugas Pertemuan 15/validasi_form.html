@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validateForm() {
+            var name = document.forms["myForm"]["txtName"].value;
+            var age = document.forms["myForm"]["txtAge"].value;
+
+            if (name == "") {
+                alert("Nama harus diisi");
+                document.forms["myForm"]["txtName"].focus();
+                return false;
+            }
+
+            if (age == "" || isNaN(age) || age <= 0) {
+                alert("Umur harus diisi dengan angka yang valid");
+                document.forms["myForm"]["txtAge"].focus();
+                return false;
+            }
+
+            alert("Terima kasih, " + name + "! Form berhasil divalidasi.");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return validateForm()">
+        Please enter the following details:
+        <p>
+            Nama:
+            <br>
+            <input type="text" name="txtName">
+            <br>
+            <br> Umur:
+            <br>
+            <input type="text" name="txtAge" size="3" maxlength="3">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+
+</html>

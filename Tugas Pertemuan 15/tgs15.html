@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        // Fungsi untuk menampilkan pesan alert
+        function showAlert() {
+            alert("Ini adalah pesan alert!");
+        }
+
+        // Fungsi untuk menampilkan prompt dan menanggapi input pengguna
+        function showPrompt() {
+            var userInput = prompt("Masukkan sesuatu:", "Default nilai");
+            if (userInput !== null) {
+                alert("Anda memasukkan: " + userInput);
+            } else {
+                alert("Anda membatalkan prompt.");
+            }
+        }
+
+        // Fungsi untuk menampilkan konfirmasi dan menanggapi pilihan pengguna
+        function showConfirm() {
+            var userChoice = confirm("Apakah Anda yakin ingin melanjutkan?");
+            if (userChoice) {
+                alert("Anda memilih OK.");
+            } else {
+                alert("Anda memilih Cancel.");
+            }
+        }
+
+        // Fungsi untuk menangani submit formulir
+        function handleSubmit() {
+            var name = document.forms["myForm"]["name"].value;
+            alert("Halo, " + name + "! Form berhasil disubmit.");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Program JavaScript dengan Alert, Prompt, Confirm, dan Form</h1>
+
+    <button onclick="showAlert()">Tampilkan Alert</button>
+    <button onclick="showPrompt()">Tampilkan Prompt</button>
+    <button onclick="showConfirm()">Tampilkan Confirm</button>
+
+    <form name="myForm" onsubmit="handleSubmit(); return false;">
+        <br>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+
+</html>
