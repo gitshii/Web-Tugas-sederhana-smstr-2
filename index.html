@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Novandi Rio Wicaksono — Koleksi Tugas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Novandi Rio W.</a>
+        <div class="nav-controls">
+          <input
+            id="search"
+            class="search"
+            type="search"
+            placeholder="Cari tugas atau nama file..."
+            aria-label="Cari tugas"
+          />
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            aria-pressed="false"
+            title="Toggle theme"
+          >
+            🌙
+          </button>
+          <button
+            id="menuToggle"
+            class="icon-btn menu-btn"
+            aria-expanded="false"
+            aria-controls="mainNav"
+            title="Menu"
+          >
+            ☰
+          </button>
+        </div>
+        <nav id="mainNav" class="nav">
+          <a href="#tugas">Tugas</a>
+          <a href="#about">Tentang</a>
+          <a href="#cta">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1>Novandi Rio Wicaksono</h1>
+            <p class="lead">Mahasiswa Universitas Pamulang — Semester 2</p>
+            <p class="muted">
+              Koleksi tugas pertemuan (Tugas Pertemuan 2 &ndash; 18). Klik
+              Detail Card untuk melihat detail dan buka tugas.
+            </p>
+            <a class="btn primary" href="#tugas">Lihat Tugas</a>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <svg
+              width="280"
+              height="220"
+              viewBox="0 0 280 220"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0"
+                y="0"
+                width="280"
+                height="220"
+                rx="20"
+                fill="#f6f9ff"
+              />
+              <circle cx="70" cy="70" r="38" fill="#cfe7ff" />
+              <rect
+                x="120"
+                y="40"
+                width="120"
+                height="28"
+                rx="8"
+                fill="#d9f0e6"
+              />
+              <rect
+                x="120"
+                y="80"
+                width="90"
+                height="18"
+                rx="6"
+                fill="#fff1d6"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="tugas">
+        <div class="tugas-header">
+          <div>
+            <h2 class="section-title">Semua Tugas (Pertemuan 2 - 18)</h2>
+            <p class="section-sub">
+              Klik "Detail" pada setiap kartu untuk melihat file tugas dan buka
+              dengan klik link.
+            </p>
+          </div>
+          <div class="tugas-actions">
+            <label class="sr-only" for="filter">Filter tugas</label>
+            <input
+              id="filter"
+              class="filter"
+              placeholder="Filter pertemuan, file, atau kata kunci"
+              aria-label="Filter tugas"
+            />
+          </div>
+        </div>
+
+        <div class="cards-grid" id="cardsGrid">
+          <!-- Tugas Pertemuan 2 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 2</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t2"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t2" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 2/latihan1.html">latihan1.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 2/latihan2.html">latihan2.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 3 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 3</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t3"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t3" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 3/latihan3.html">latihan3.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 3/latihan4.html">latihan4.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 3/latihan5.html">latihan5.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 4 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 4</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t4"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t4" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 4/latihan6.html">latihan6.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 4/latihan7.html">latihan7.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 4/latihan8.html">latihan8.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 4/latihan9.html">latihan9.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 4/latihan10.html">latihan10.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 5 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 5</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t5"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t5" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 5/hyperlink1.html"
+                    >hyperlink1.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 5/hyperlink2.html"
+                    >hyperlink2.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 5/hyperlink3.html"
+                    >hyperlink3.html</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 6 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 6</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t6"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t6" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 6/latihan11.html">latihan11.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 6/latihan12.html">latihan12.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 6/latihan13.html">latihan13.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 7 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 7</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t7"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t7" hidden>
+              <ul>
+                <li><a href="Tugas pertemuan 7/index.html">index.html</a></li>
+                <li>
+                  <a href="Tugas pertemuan 7/latihan14.html">latihan14.html</a>
+                </li>
+                <li>
+                  <a href="Tugas pertemuan 7/latihan15.html">latihan15.html</a>
+                </li>
+                <li>
+                  <a href="Tugas pertemuan 7/latihan16.html">latihan16.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 8 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 8</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t8"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t8" hidden>
+              <ul>
+                <li>Folder berisi latihan (lihat isi folder)</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 9 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 9</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t9"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t9" hidden>
+              <ul>
+                <li>Folder berisi latihan (lihat isi folder)</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 10 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 10</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t10"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t10" hidden>
+              <ul>
+                <li><a href="Tugas Pertemuan 10/index.html">index.html</a></li>
+                <li>
+                  <a href="Tugas Pertemuan 10/iframe.html">iframe.html</a>
+                </li>
+                <li>
+                  <a
+                    href="Tugas Pertemuan 10/Tampilan browser dengan width dan height.html"
+                    >Tampilan browser dengan width dan height.html</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 11 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 11</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t11"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t11" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 11/P11_Latihan1.html"
+                    >P11_Latihan1.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 11/P11_Latihan2.html"
+                    >P11_Latihan2.html</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 12 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 12</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t12"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t12" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 12/P12_Latihan1.html"
+                    >P12_Latihan1.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 12/P12_Latihan2.html"
+                    >P12_Latihan2.html</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 13 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 13</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t13"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t13" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 13/P13_Latihan1.html"
+                    >P13_Latihan1.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 13/P13_Latihan2.html"
+                    >P13_Latihan2.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 13/P13_Latihan3.html"
+                    >P13_Latihan3.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 13/P13_Latihan4.html"
+                    >P13_Latihan4.html</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 14 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 14</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t14"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t14" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 14/luastrapesium.html"
+                    >luastrapesium.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 14/variabel.html">variabel.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 14/variabel2.html">variabel2.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 15 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 15</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t15"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t15" hidden>
+              <ul>
+                <li><a href="Tugas Pertemuan 15/Alert.html">Alert.html</a></li>
+                <li>
+                  <a href="Tugas Pertemuan 15/Confirm.html">Confirm.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 15/Prompt.html">Prompt.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 15/form_input.html"
+                    >form_input.html</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 16 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 16</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t16"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t16" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 16/P16_Latihan1.html"
+                    >P16_Latihan1.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 16/P16_Latihan2.html"
+                    >P16_Latihan2.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 16/P16_Latihan3.html"
+                    >P16_Latihan3.html</a
+                  >
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 16/P16_Latihan4.html"
+                    >P16_Latihan4.html</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 17 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 17</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t17"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t17" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 17/Latihan1.html">Latihan1.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 17/Latihan2.html">Latihan2.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 17/Latihan3.html">Latihan3.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 17/Latihan4.html">Latihan4.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 17/Latihan5.html">Latihan5.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tugas Pertemuan 18 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Tugas Pertemuan 18</h3>
+              <button
+                class="details-btn"
+                aria-expanded="false"
+                aria-controls="t18"
+              >
+                Detail
+              </button>
+            </div>
+            <div class="card-body" id="t18" hidden>
+              <ul>
+                <li>
+                  <a href="Tugas Pertemuan 18/Latihan1.html">Latihan1.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 18/Latihan2.html">Latihan2.html</a>
+                </li>
+                <li>
+                  <a href="Tugas Pertemuan 18/Latihan3.html">Latihan3.html</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="container cta-inner">
+          <h3>Butuh bantuan atau ingin tahu lebih?</h3>
+          <p class="muted">
+            Hubungi saya melalui DM atau lihat file zip tugas jika tersedia di
+            folder.
+          </p>
+          <a class="btn ghost" href="#">Hubungi Saya</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Novandi Rio Wicaksono — Universitas Pamulang
+        </p>
+        <p class="muted">
+          Meski Merangkak, Tetaplah melangkah, karna u adalah laki-laki.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal preview untuk melihat file HTML tanpa meninggalkan halaman -->
+    <div id="previewModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-dismiss="true"></div>
+      <div
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <header class="modal-head">
+          <h4 id="modalTitle">Preview</h4>
+          <button id="modalClose" class="icon-btn" aria-label="Tutup preview">
+            ✕
+          </button>
+        </header>
+        <div class="modal-body">
+          <iframe id="previewFrame" src="about:blank" frameborder="0"></iframe>
+        </div>
+        <footer class="modal-foot">
+          <a id="openInNew" class="btn ghost" target="_blank" rel="noopener"
+            >Buka di tab baru</a
+          >
+        </footer>
+      </div>
+    </div>
+
+    <script src="scripts/site.js" defer></script>
+  </body>
+</html>
